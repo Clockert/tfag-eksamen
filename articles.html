@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Articles and guides by professional mountain guide Jimmy Halvardsson"
+    />
+    <title>Articles - Jimmy Halvardsson Mountain Guide</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo/favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS file with imports -->
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Navigation container - will be populated by component loader -->
+    <div id="navigation-container"></div>
+
+    <main class="main-content">
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link">Home</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--active">
+              <span class="breadcrumbs__text">Articles</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Articles Section -->
+      <section class="section articles">
+        <div class="container">
+          <h1 class="section__title">Articles</h1>
+
+          <div class="articles__filter-container">
+            <div class="articles__filters">
+              <button class="articles__filter-btn active" data-category="all">
+                All <span class="articles__filter-count">(0)</span>
+              </button>
+              <button class="articles__filter-btn" data-category="climbing">
+                Climbing <span class="articles__filter-count">(0)</span>
+              </button>
+              <button class="articles__filter-btn" data-category="hiking">
+                Hiking <span class="articles__filter-count">(0)</span>
+              </button>
+              <button class="articles__filter-btn" data-category="safety">
+                Safety <span class="articles__filter-count">(0)</span>
+              </button>
+              <button class="articles__filter-btn" data-category="gear">
+                Gear <span class="articles__filter-count">(0)</span>
+              </button>
+            </div>
+            <div class="articles__sort">
+              <button class="articles__sort-btn">
+                <span class="articles__sort-text">Sort</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="articles__sort-icon"
+                >
+                  <path d="M11 5h10"></path>
+                  <path d="M11 9h7"></path>
+                  <path d="M11 13h4"></path>
+                  <path d="M3 17l3 3 3-3"></path>
+                  <path d="M6 18V4"></path>
+                </svg>
+              </button>
+              <div class="articles__sort-dropdown">
+                <button class="articles__sort-option active" data-sort="newest">
+                  Newest to Oldest
+                </button>
+                <button class="articles__sort-option" data-sort="oldest">
+                  Oldest to Newest
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="articles__grid" id="articles-grid">
+            <!-- Article cards will be inserted here by JavaScript -->
+            <div class="articles__loading">Loading articles...</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer container - will be populated by component loader -->
+    <div id="footer-container"></div>
+
+    <!-- Component Loader -->
+    <script src="components/component-loader.js"></script>
+
+    <!-- Component Scripts -->
+    <script src="components/navigation/navigation.js"></script>
+    <script src="components/footer/footer.js"></script>
+
+    <!-- Article List Script -->
+    <script src="scripts/articles.js"></script>
+
+    <!-- Main Script -->
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
