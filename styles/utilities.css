@@ -1,3 +1,433 @@
-/ project-root/styles/utilities.css
+/* utilities.css */
+/* Utility classes using BEM methodology */
 
-/* This file is intentionally left blank. */
+/* 
+* BEM naming for utilities:
+* - Block: The utility category (container, text, spacing, etc.)
+* - Element: The property being modified (width, color, etc.)
+* - Modifier: The value being applied (sm, lg, primary, etc.)
+*/
+
+/* Container utilities */
+.container {
+  width: 100%;
+  max-width: 90rem; /* 1440px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--padding-content);
+  padding-right: var(--padding-content);
+}
+
+.container--narrow {
+  max-width: 75rem; /* 1200px */
+}
+
+.container--wide {
+  max-width: 100rem; /* 1600px */
+}
+
+/* Section utilities */
+.section {
+  padding-top: var(--gap-content);
+  padding-bottom: var(--gap-content);
+}
+
+.section--sm {
+  padding-top: calc(var(--gap-content) * 0.5);
+  padding-bottom: calc(var(--gap-content) * 0.5);
+}
+
+.section--lg {
+  padding-top: calc(var(--gap-content) * 1.5);
+  padding-bottom: calc(var(--gap-content) * 1.5);
+}
+
+/* Background colors */
+.bg {
+  background-color: var(--color-white);
+}
+
+.bg--dark {
+  background-color: var(--color-darkblue);
+  color: var(--color-white);
+}
+
+.bg--light {
+  background-color: var(--color-lightblue);
+}
+
+.bg--accent {
+  background-color: var(--color-orange);
+}
+
+.bg--gray {
+  background-color: var(--color-gray-light);
+}
+
+/* Text colors */
+.text-color {
+  color: var(--color-black);
+}
+
+.text-color--white {
+  color: var(--color-white);
+}
+
+.text-color--dark {
+  color: var(--color-darkblue);
+}
+
+.text-color--accent {
+  color: var(--color-orange);
+}
+
+.text-color--gray {
+  color: var(--color-gray);
+}
+
+/* Text alignment */
+.text-align {
+  text-align: left;
+}
+
+.text-align--center {
+  text-align: center;
+}
+
+.text-align--right {
+  text-align: right;
+}
+
+/* Font weights */
+.font-weight {
+  font-weight: var(--font-weight-regular);
+}
+
+.font-weight--light {
+  font-weight: var(--font-weight-light);
+}
+
+.font-weight--medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-weight--semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-weight--bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.font-weight--black {
+  font-weight: var(--font-weight-black);
+}
+
+/* Font sizes */
+.font-size {
+  font-size: var(--font-size-base);
+}
+
+.font-size--xs {
+  font-size: var(--font-size-xs);
+}
+
+.font-size--sm {
+  font-size: var(--font-size-sm);
+}
+
+.font-size--lg {
+  font-size: var(--font-size-lg);
+}
+
+.font-size--xl {
+  font-size: var(--font-size-xl);
+}
+
+.font-size--2xl {
+  font-size: var(--font-size-2xl);
+}
+
+.font-size--3xl {
+  font-size: var(--font-size-3xl);
+}
+
+.font-size--4xl {
+  font-size: var(--font-size-4xl);
+}
+
+/* Margin and Padding utilities */
+.margin {
+  margin: var(--spacing-4);
+}
+
+.margin--0 {
+  margin: 0;
+}
+
+.margin-top {
+  margin-top: var(--spacing-4);
+}
+
+.margin-top--0 {
+  margin-top: 0;
+}
+
+.margin-top--sm {
+  margin-top: var(--spacing-2);
+}
+
+.margin-top--md {
+  margin-top: var(--spacing-8);
+}
+
+.margin-top--lg {
+  margin-top: var(--spacing-16);
+}
+
+.margin-bottom {
+  margin-bottom: var(--spacing-4);
+}
+
+.margin-bottom--0 {
+  margin-bottom: 0;
+}
+
+.margin-bottom--sm {
+  margin-bottom: var(--spacing-2);
+}
+
+.margin-bottom--md {
+  margin-bottom: var(--spacing-8);
+}
+
+.margin-bottom--lg {
+  margin-bottom: var(--spacing-16);
+}
+
+/* Gap utilities for layout */
+.gap {
+  gap: var(--spacing-4);
+}
+
+.gap--sm {
+  gap: var(--spacing-2);
+}
+
+.gap--md {
+  gap: var(--spacing-8);
+}
+
+.gap--lg {
+  gap: var(--spacing-16);
+}
+
+/* Layout utilities */
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--col {
+  flex-direction: column;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+.justify--start {
+  justify-content: flex-start;
+}
+
+.justify--center {
+  justify-content: center;
+}
+
+.justify--end {
+  justify-content: flex-end;
+}
+
+.justify--between {
+  justify-content: space-between;
+}
+
+.items--start {
+  align-items: flex-start;
+}
+
+.items--center {
+  align-items: center;
+}
+
+.items--end {
+  align-items: flex-end;
+}
+
+/* Visibility utilities */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/* Shadow utilities */
+.shadow {
+  box-shadow: var(--shadow-default);
+}
+
+.shadow--sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow--md {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow--lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Responsive utilities */
+@media (max-width: 1024px) {
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hidden--lg {
+    display: none;
+  }
+
+  .visible--lg {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hidden--md {
+    display: none;
+  }
+
+  .visible--md {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hidden--sm {
+    display: none;
+  }
+
+  .visible--sm {
+    display: block;
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  font-size: var(--font-size-menu);
+  line-height: 1;
+}
+
+.btn--primary {
+  background-color: var(--color-lightorange);
+  color: var(--color-darkblue);
+}
+
+.btn--primary:hover {
+  box-shadow: var(--shadow-default);
+  transform: translateY(-2px);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+
+.btn--secondary:hover {
+  background-color: var(--color-white);
+  color: var(--color-darkblue);
+  transform: translateY(-2px);
+}
+
+.btn--dark {
+  background-color: var(--color-darkblue);
+  color: var(--color-white);
+}
+
+.btn--dark:hover {
+  background-color: var(--color-midblue);
+  box-shadow: var(--shadow-default);
+  transform: translateY(-2px);
+}
+
+.btn--sm {
+  padding: 0.5rem 1.5rem;
+  font-size: var(--font-size-sm);
+}
+
+.btn--lg {
+  padding: 1rem 4rem;
+  font-size: var(--font-size-lg);
+}
+
+/* Image utilities */
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.img--cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img--contain {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.img--rounded {
+  border-radius: var(--border-radius-lg);
+}
+
+.img--circle {
+  border-radius: 50%;
+}

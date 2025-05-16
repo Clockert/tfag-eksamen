@@ -1,0 +1,140 @@
+{
+  "articles": [
+    {
+      "id": "essential-safety-tips",
+      "title": "Essential Safety Tips for Mountain Climbing",
+      "slug": "essential-safety-tips-for-mountain-climbing",
+      "excerpt": "Stay safe during your climbing expeditions with these critical safety practices every mountaineer should know.",
+      "featuredImage": "assets/images/articles/safety-tips.jpg",
+      "date": "May 10, 2025",
+      "category": "Safety",
+      "readingTime": 8,
+      "author": {
+        "id": "jimmy",
+        "name": "Jimmy Halvardsson",
+        "title": "Professional Mountain Guide"
+      },
+      "tags": ["safety", "climbing", "beginners", "equipment", "emergency"],
+      "relatedArticles": [
+        "best-alps-hiking-routes",
+        "choosing-climbing-gear",
+        "winter-climbing-guide"
+      ]
+    },
+    {
+      "id": "best-alps-hiking-routes",
+      "title": "Best Hiking Routes in the Alps",
+      "slug": "best-hiking-routes-in-the-alps",
+      "excerpt": "Discover the most scenic and rewarding hiking trails across the majestic Alpine mountain range.",
+      "featuredImage": "assets/images/articles/alps-hiking.jpg",
+      "date": "April 25, 2025",
+      "category": "Hiking",
+      "readingTime": 10,
+      "author": {
+        "id": "jimmy",
+        "name": "Jimmy Halvardsson",
+        "title": "Professional Mountain Guide"
+      },
+      "tags": ["hiking", "alps", "routes", "destinations"],
+      "relatedArticles": [
+        "wilderness-survival-skills",
+        "choosing-climbing-gear",
+        "beginner-mountain-peaks"
+      ]
+    },
+    {
+      "id": "choosing-climbing-gear",
+      "title": "Choosing the Right Climbing Gear",
+      "slug": "choosing-the-right-climbing-gear",
+      "excerpt": "A comprehensive guide to selecting the appropriate equipment for different climbing scenarios and environments.",
+      "featuredImage": "assets/images/articles/climbing-gear.jpg",
+      "date": "April 15, 2025",
+      "category": "Gear",
+      "readingTime": 12,
+      "author": {
+        "id": "jimmy",
+        "name": "Jimmy Halvardsson",
+        "title": "Professional Mountain Guide"
+      },
+      "tags": ["gear", "equipment", "climbing", "safety"],
+      "relatedArticles": [
+        "essential-safety-tips",
+        "winter-climbing-guide",
+        "wilderness-survival-skills"
+      ]
+    },
+    {
+      "id": "winter-climbing-guide",
+      "title": "Winter Climbing: What You Need to Know",
+      "slug": "winter-climbing-what-you-need-to-know",
+      "excerpt": "Prepare for the unique challenges of cold-weather mountaineering with this essential winter climbing guide.",
+      "featuredImage": "assets/images/articles/winter-climbing.jpg",
+      "date": "March 30, 2025",
+      "category": "Climbing",
+      "readingTime": 15,
+      "author": {
+        "id": "jimmy",
+        "name": "Jimmy Halvardsson",
+        "title": "Professional Mountain Guide"
+      },
+      "tags": ["winter", "climbing", "advanced", "safety", "gear"],
+      "relatedArticles": [
+        "essential-safety-tips",
+        "choosing-climbing-gear",
+        "wilderness-survival-skills"
+      ]
+    },
+    {
+      "id": "beginner-mountain-peaks",
+      "title": "Top 5 Mountain Peaks for Beginners",
+      "slug": "top-5-mountain-peaks-for-beginners",
+      "excerpt": "Start your mountain climbing journey with these approachable peaks perfect for novice climbers.",
+      "featuredImage": "assets/images/articles/beginner-peaks.jpg",
+      "date": "March 15, 2025",
+      "category": "Climbing",
+      "readingTime": 7,
+      "author": {
+        "id": "jimmy",
+        "name": "Jimmy Halvardsson",
+        "title": "Professional Mountain Guide"
+      },
+      "tags": ["beginners", "climbing", "peaks", "destinations"],
+      "relatedArticles": [
+        "essential-safety-tips",
+        "choosing-climbing-gear",
+        "best-alps-hiking-routes"
+      ]
+    },
+    {
+      "id": "wilderness-survival-skills",
+      "title": "Wilderness Survival Skills Every Hiker Should Master",
+      "slug": "wilderness-survival-skills-every-hiker-should-master",
+      "excerpt": "Essential techniques for staying safe and handling emergencies when exploring remote mountain areas.",
+      "featuredImage": "assets/images/articles/survival-skills.jpg",
+      "date": "February 28, 2025",
+      "category": "Safety",
+      "readingTime": 14,
+      "author": {
+        "id": "jimmy",
+        "name": "Jimmy Halvardsson",
+        "title": "Professional Mountain Guide"
+      },
+      "tags": ["safety", "survival", "hiking", "emergency"],
+      "relatedArticles": [
+        "essential-safety-tips",
+        "winter-climbing-guide",
+        "choosing-climbing-gear"
+      ]
+    }
+  ],
+  "categories": ["Climbing", "Hiking", "Safety", "Gear"],
+  "authors": [
+    {
+      "id": "jimmy",
+      "name": "Jimmy Halvardsson",
+      "title": "Professional Mountain Guide",
+      "bio": "With over 15 years of experience as a professional mountain guide, Jimmy Halvardsson has led expeditions across Europe's most challenging alpine environments.",
+      "image": "assets/images/guide-profile.jpg"
+    }
+  ]
+}

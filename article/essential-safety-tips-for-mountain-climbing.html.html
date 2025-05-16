@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ARTICLE_EXCERPT" />
+    <title>ARTICLE_TITLE - Jimmy Halvardsson</title>
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta
+      property="og:title"
+      content="ARTICLE_TITLE - Jimmy Halvardsson Mountain Guide"
+    />
+    <meta property="og:description" content="ARTICLE_EXCERPT" />
+    <meta property="og:image" content="https://example.com/ARTICLE_IMAGE" />
+    <meta
+      property="og:url"
+      content="https://example.com/article/ARTICLE_SLUG.html"
+    />
+    <meta property="og:type" content="article" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/logo/favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS file with imports -->
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <!-- Navigation container - will be populated by component loader -->
+    <div id="navigation-container"></div>
+
+    <main class="main-content">
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="../index.html" class="breadcrumbs__link">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="../articles.html" class="breadcrumbs__link">Articles</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--active">
+              <span class="breadcrumbs__text">ARTICLE_TITLE_SHORT</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Article Content -->
+      <section class="section">
+        <div class="container">
+          <!-- This container will be populated by the article-content component -->
+          <div id="article-content-container"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer container - will be populated by component loader -->
+    <div id="footer-container"></div>
+
+    <!-- Component Loader -->
+    <script src="../components/component-loader.js"></script>
+
+    <!-- Component Scripts -->
+    <script src="../components/navigation/navigation.js"></script>
+    <script src="../components/footer/footer.js"></script>
+    <script src="../components/article-content/article-content.js"></script>
+
+    <!-- Main Script -->
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

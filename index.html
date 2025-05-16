@@ -1,22 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-    <header>
-        <!-- Navigation component will be loaded here -->
-    </header>
-    <main>
-        <h1>Welcome to Our Website</h1>
-        <p>This is the homepage of our application.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional mountain guide services with Jimmy Halvardsson. Expert guidance for climbing, hiking, and alpine adventures in Europe's most beautiful mountain ranges."
+    />
+    <title>Mountain Guide - Jimmy Halvardsson</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo/favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS file with imports -->
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Navigation container - will be populated by component loader -->
+    <div id="navigation-container"></div>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Explore the Mountains with an Expert Guide
+            </h1>
+            <p class="hero__subtitle">
+              Professional mountain guiding services for all skill levels
+            </p>
+            <div class="hero__cta">
+              <a href="services.html" class="btn btn--primary"
+                >Explore Services</a
+              >
+              <a href="contact.html" class="btn btn--secondary">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Services -->
+      <section class="section services">
+        <div class="container">
+          <h2 class="section__title">Services</h2>
+          <div class="grid grid--3-cols">
+            <div class="service">
+              <div class="service__icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18457 2.99721 7.13633 4.39828 5.49707C5.79935 3.85782 7.69279 2.71538 9.79619 2.24015C11.8996 1.76491 14.1003 1.98234 16.07 2.86"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 4L12 14.01L9 11.01"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="service__title">Mountain Climbing</h3>
+              <p class="service__description">
+                Expert guided climbing expeditions for all skill levels, from
+                beginners to experienced climbers.
+              </p>
+              <a href="services.html#climbing" class="service__link"
+                >Learn More</a
+              >
+            </div>
+
+            <div class="service">
+              <div class="service__icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 16L3 12L7 8"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21 12H4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 3V5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 19V21"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="service__title">Wilderness Tours</h3>
+              <p class="service__description">
+                Guided wilderness tours through breathtaking mountain landscapes
+                with expert navigation.
+              </p>
+              <a href="services.html#tours" class="service__link">Learn More</a>
+            </div>
+
+            <div class="service">
+              <div class="service__icon">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M2 12H22"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="service__title">Survival Skills</h3>
+              <p class="service__description">
+                Learn essential outdoor survival skills from an experienced
+                mountain guide and adventurer.
+              </p>
+              <a href="services.html#survival" class="service__link"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section about bg--light">
+        <div class="container">
+          <div class="grid grid--2-cols">
+            <div class="about__image">
+              <img
+                src="assets/images/guide-profile.jpg"
+                alt="Jimmy Halvardsson Mountain Guide"
+                class="img img--cover img--rounded"
+              />
+            </div>
+            <div class="about__content">
+              <h2 class="section__title">About Jimmy</h2>
+              <p class="about__text">
+                With over 15 years of experience as a professional mountain
+                guide, Jimmy Halvardsson has led expeditions across Europe's
+                most challenging alpine environments.
+              </p>
+              <p class="about__text">
+                From the towering peaks of the Alps to the rugged landscapes of
+                Scandinavia, Jimmy combines expert knowledge with a passion for
+                safety and environmental preservation.
+              </p>
+              <a href="about.html" class="btn btn--primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section testimonials">
+        <div class="container">
+          <h2 class="section__title text-align--center">What Clients Say</h2>
+          <div class="testimonial">
+            <div class="testimonial__content">
+              <p class="testimonial__text">
+                "Jimmy's expertise made our climbing expedition not just safe,
+                but truly educational. I learned techniques I still use today."
+              </p>
+            </div>
+            <div class="testimonial__author">
+              <img
+                src="assets/images/testimonial-1.jpg"
+                alt="Sarah Johnson"
+                class="testimonial__image"
+              />
+              <div class="testimonial__info">
+                <p class="testimonial__name">Sarah Johnson</p>
+                <p class="testimonial__position">Experienced Climber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="section cta bg--dark">
+        <div class="container">
+          <div class="cta__content text-align--center">
+            <h2 class="section__title text-color--white">
+              Ready for Your Mountain Adventure?
+            </h2>
+            <p class="cta__text text-color--white">
+              Contact me today to discuss your next expedition or book a guided
+              tour.
+            </p>
+            <a href="contact.html" class="btn btn--primary cta__button"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        <!-- Footer component will be loaded here -->
-    </footer>
+
+    <!-- Footer container - will be populated by component loader -->
+    <div id="footer-container"></div>
+
+    <!-- Component Loader -->
+    <script src="components/component-loader.js"></script>
+
+    <!-- Component Scripts -->
+    <script src="components/navigation/navigation.js"></script>
+    <script src="components/footer/footer.js"></script>
+
+    <!-- Main Script -->
     <script src="scripts/main.js"></script>
-</body>
+  </body>
 </html>

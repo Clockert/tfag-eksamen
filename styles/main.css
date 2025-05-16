@@ -1,3 +1,18 @@
-/ project-root/styles/main.css
+/* main.css */
+/* Main CSS file that imports all styles */
 
-/* This file is intentionally left blank. */
+/* Import base styles */
+@import url("base.css");
+@import url("utilities.css");
+
+/* Import component styles */
+@import url("../components/navigation/navigation.css");
+@import url("../components/footer/footer.css");
+/* Add additional component imports as they are created */
+
+/* Import page-specific styles */
+@import url("pages/index.css");
+@import url("pages/about.css");
+@import url("pages/services.css");
+@import url("pages/articles.css");
+@import url("pages/contact.css");
